@@ -10,16 +10,19 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-
+        <script
+        src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
         <!-- Latest compiled and minified CSS -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
             crossorigin="anonymous">
+        
+            <!-- Firebase Reference -->
+        <script src="https://www.gstatic.com/firebasejs/3.7.1/firebase.js"></script>
 
-        <link rel="stylesheet" type="text/css" href="assests/CSS/reset.css">
-        <link rel="stylesheet" type="text/css" href="assests/CSS/style.css">
-
-
-
+        <link rel="stylesheet" type="text/css" href="assets/CSS/reset.css">
+        <link rel="stylesheet" type="text/css" href="assets/CSS/style.css">
 
     </head>
 
@@ -54,23 +57,23 @@
                 <br>
                 <div class="inputs">
                     <div class="form-group">
-                        <label for="trainName">Employee Name</label>
-                        <input type="text" class="form-control" id="trainName">
+                        <label for="employee-name">Employee Name</label>
+                        <input type="text" class="form-control" id="employee-name">
                     </div>
                     <div class="form-group">
-                        <label for="destination">Role</label>
-                        <input type="text" class="form-control" id="destination">
+                        <label for="role">Role</label>
+                        <input type="text" class="form-control" id="role">
                     </div>
                     <div class="form-group">
-                        <label for="destination">Start Date (DD/MM/YY ex. 01/01/1980))</label>
-                        <input type="text" class="form-control" id="destination">
+                        <label for="start-date">Start Date (DD/MM/YY ex. 01/01/1980))</label>
+                        <input type="text" class="form-control" id="start-date">
                     </div>
                     <div class="form-group">
-                        <label for="destination">Monthly Rate:</label>
-                        <input type="text" class="form-control" id="destination">
+                        <label for="monthly-rate">Monthly Rate:</label>
+                        <input type="text" class="form-control" id="monthly-rate">
                     </div>
                     <div class="button">
-                        <button type="button" class="btn btn-primary">Submit</button>
+                        <button type="button" class="btn btn-primary" id="add-user">Submit</button>
                     </div>
                     <br>
                 </div>
@@ -78,7 +81,7 @@
 
 
         </div>
-
+        <script src="assets/scripts/script.js"></script>
     </body>
 
 </html>
